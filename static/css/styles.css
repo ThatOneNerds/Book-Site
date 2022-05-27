@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #5fdd9d;
+}
+
+.topnav {
+    background-color: #76f7bf;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.topnav a {
+    float:left;
+    color: #3f4531;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px;
+    font-size: 17px;
+}
+
+#title {
+    font-weight: bold;
+}
+
+.Booklist {
+    padding-top: 14px;
+    padding-left: 14px;
+}

@@ -1,11 +1,27 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
     <head>
         <title> Homepage </title>
-        <link rel="stylesheet" src="style.css">
+        <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
+
     </head>
 
     <body>
-       <h1> Hello </h1> Hello   
+       <div class="topnav">
+           <nav>
+                <a href='' id='title'> Bookalicious </a>
+                <a href=""> Home </a>
+                <a href="/Books"> Books </a>
+                <a href="/Discussion"> Discusion </a>
+           </nav>
+       </div>
+
+       <div class="Booklist">
+           <h1> Reviews of the Day </h1>
+            <!-- Show a picture of the books reviewed on that day -->
+       </div>
     </body>
+
 </html>
