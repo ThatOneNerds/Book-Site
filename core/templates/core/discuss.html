@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Homepage </title>
+        <title> Discussion </title>
         <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
 
     </head>
@@ -19,9 +19,16 @@
        </div>
 
        <div class="Booklist">
-           <h1> Reviews of the Day </h1>
+           <h1> The Chat Room </h1>
             <!-- Show a picture of the books reviewed on that day -->
        </div>
+
+       <div>
+            {% for x in review %}
+                {{x.review}}
+            {% endfor %}
+        </div>
+
     </body>
 
 </html>

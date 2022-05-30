@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Homepage </title>
+        <title> Books </title>
         <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
 
     </head>
@@ -13,15 +13,25 @@
            <nav>
                 <a href='/' id='title'> Bookalicious </a>
                 <a href='/'> Home </a>
-                <a href="/Books"> Books </a>
+                <a href="/Books"> Browse </a>
                 <a href="/Discussion"> Discusion </a>
            </nav>
        </div>
 
        <div class="Booklist">
-           <h1> Reviews of the Day </h1>
+           <h1> Explore </h1>
             <!-- Show a picture of the books reviewed on that day -->
        </div>
+       
+        {% for browse in browse %}
+            <div class="Books">
+                <h3>{{browse.name}}</h3>
+                <p>{{browse.author}}</p>
+                <p>{{browse.description}}</p>
+                <p>{{browse.price}}</p>
+            </div>    
+        {% endfor %}
+
     </body>
 
 </html>
