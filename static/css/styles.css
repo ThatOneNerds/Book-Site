@@ -7,12 +7,20 @@ body {
     background-color: #5fdd9d;
 }
 
+img {
+    height: 200;
+    width: 135;
+}
+
+img:hover {
+    height: 400;
+}
+
 .topnav {
     background-color: #76f7bf;
     margin: 0;
     padding: 0;
     overflow: hidden;
-
 }
 
 .topnav a {

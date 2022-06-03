@@ -1,26 +1,12 @@
-{% load static %}
+{% extends 'core/index.html' %}
 
-<!DOCTYPE html>
-<html>
+{% block content %}
     <head>
-        <title> Books </title>
-        <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
-
+        <title> Browse </title>
     </head>
-
-    <body>
-       <div class="topnav">
-           <nav>
-                <a href='/' id='title'> Bookalicious </a>
-                <a href='/'> Home </a>
-                <a href="/Books"> Browse </a>
-                <a href="/Discussion"> Discusion </a>
-           </nav>
-       </div>
 
        <div class="Booklist">
            <h1> Explore </h1>
-            <!-- Show a picture of the books reviewed on that day -->
        </div>
        
         {% for browse in browse %}
@@ -29,9 +15,9 @@
                 <p>{{browse.author}}</p>
                 <p>{{browse.description}}</p>
                 <p>{{browse.price}}</p>
+                <a> <img class='book-img' src="{{browse.img}}" height="200" width="135"> </a> 
             </div>    
         {% endfor %}
 
     </body>
-
-</html>
+{% endblock %}
